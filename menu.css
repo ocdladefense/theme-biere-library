@@ -1,0 +1,34 @@
+#wrapper {
+    background-image: url(themes/biere-library/assets/images/draft-list.jpg);
+    min-height: 800px;
+    zoom: 1.0;
+    background-size: cover;
+    margin-left: -44px;
+    width: 120%;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+
+.table-format li {
+    display: table-cell;
+    padding: 20px;
+    font-size: 3.0rem;
+    font-family: 'Nanum Pen Script', cursive;
+    color: lightgrey;
+}
+
+.table-format ul {
+    display: table-row;
+}
+
+/**
+ * Works great for menu title like, "drink menu" "food menu" "bottles" etc.
+ */
+.menu-title {
+    font-weight: 200;
+    color: transparent;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+    letter-spacing: 4px;
+    font-size: 60px;
+}
