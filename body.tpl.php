@@ -9,5 +9,5 @@
 </header>
 
 <div id="wrapper">
-    <?php include $out; ?>
+    <?= $out ?>
 </div>

@@ -6,7 +6,7 @@
     </style>
         <div class="row three-columns">
             <div class="column footer-panel">
-                <a href="home?host=thebierelibrary.com">
+                <a href="/home">
                     <img src="themes/biere-library/assets/images/logo-white.png" style="width:100px;" />
                 </a>
             </div>
@@ -42,7 +42,7 @@
 
         <div class="column footer-panel">
             <h3>Contact</h3>
-            <a href="home?host=thebierelibrary.com">The Bière Library</a><br />
+            <a href="/home">The Bière Library</a><br />
             <a target="_new" href="https://goo.gl/maps/y1hQDKewNhHS9V7H7">151 NW Monroe Ave, Suite 102<br />
             Corvallis, Oregon 97331</a><br />
             Phone: <a target="_new" href="tel:5412864193">541-286-4193</a><br />
