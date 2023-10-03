@@ -1,17 +1,14 @@
 
 
 
-    <section>
+    <section class="first">
 
         <h1>The Bière Library - Food Menu</h1>
-        <h2>Indoor, Bar & Patio Seating</h2>
+        <h2>Indoor, Bar &amp; Patio Seating</h2>
         <img class="circle" src="<?= $themeUrl ?>/assets/images/frites.jpg" />
 
+        <p>Special dietary needs? Many of our soups and salads are either vegetarian or vegan and many items can be prepared gluten-free in our designated gluten-free fryer. <a class="dotted" href="/food">See the menu</a> for details. Sober or low-alcohol? We curate several <a class="dotted" href="/drink">alcohol-free spirits and cocktails</a> and <a class="dotted" href="/drink">gluten-free beer and spirits</a>.</p>
 
-
-        <!-- <iframe jsname="L5Fo6c" jscontroller="usmiIb" jsaction="rcuQ6b:WYd;" class="YMEQtf DnR2hf L6cTce-purZT L6cTce-pSzOP KfXz0b" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-modals" frameborder="0" aria-label="Document, TBL - Food Menu SOFT OPEN" data-src="https://docs.google.com/document/d/1m7u-l0ZXC7epRyVyqVC_7H9BG7NQCmYzVwsf8vArEqo/preview" style="height: 1255px" allowfullscreen></iframe> -->
-
+        <iframe width="100%" height="800" aria-label="The Biere Library - Food Menu" src="https://docs.google.com/document/d/e/2PACX-1vR6gbs6BGdRFjriRQELGn9_gb2LInD_Vt8vU1ZJIYBbLDQB7jumOUGywTlxwKesfYVF6VR7lJ28r_Ww/pub?embedded=true"></iframe>
     </section>
 
-
-        <iframe width="100%" height="1255px" src="https://docs.google.com/document/d/e/2PACX-1vTtvuDuDR_6mB7ef3KoVih-S8YR4hMe0BM_x4bstJ88IwoxK-f4HIiljXpCKO00j5e8UVLVEV1xPn2t/pub?embedded=true"></iframe>

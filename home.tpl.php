@@ -1,125 +1,134 @@
 
 
-        
-        <?php 
-            $biereLibraryCalendarId = "c_07c922398faccc5695d450d685cccf3a2463815c4ea56ad99d709e741e9e1363";
-            $josesLibraryCalendarId = "54b9c815f343ae63a171ff6afe361206457cf4c59e97a22b53165c981f98f0ab";
-            $today = explode("T",date('c'))[0];
-            $timeMax = (new DateTime($today))->modify('+3 day');
-            $end = explode("T",date_format($timeMax,'c'))[0];
+<section class="first">
+    <p>The Bière Library is a craft beer bar and restaurant serving Corvallis, Oregon. Inspired by the beer and cuisine of Belgium, The Bière Library explores the relationship between beer and food in an environment reminiscent of a comfortable library.</p>
 
-            $params = array(
-                "timeMin" => $today,
-                "timeMax" => $end,
-                "maxResults" => 3
-            );
+    <p>Check out our <a class="dotted" href="/food#dietary-options">gluten-fee and vegetarian food &amp; drink options</a>.</p>
 
-            // var_dump($params);exit;
-            $events = getEvents($josesLibraryCalendarId, $params);
+    <p>The Bière Library is an all-ages venue!  Alcohol 21+.</p>
+    <p>
+        <a target="_new" href="https://www.facebook.com/thebierelibrary" style="cursor: pointer; margin-right: 20px;">
+            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+        </a>
 
-            if(null == $events || count($events) == 0):
-            
-            else:
-        ?>
-                <div class="cheers" style="padding-right: 50px;">
-                    <h1>Upcoming Bière Library Events</h1>
+        <a target="_new" href="https://www.instagram.com/thebierelibrary/" style="cursor: pointer;">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+    </p>
+</section>
 
-                    
-                    <h2>The Bière Library Happy Hour... Everyday!</h2>
-                    <h3>Daily, 2&mdash;5pm</h3>
-                    <p>$1 off drafts, frites, brussel sprouts, paprika chips.</p>
-        <?php
-                foreach($events as $event): 
+<div style="border:1px solid #fff; padding: 25px;">
+    <h1 class="cheers" style="border: 0px solid transparent !important;">Bière Library Events</h1>
 
-                    if("Happy Hour!" == $event->summary) continue;
-                    // Extended description of the event.  Can include HTML.
-                    $event->description;
+    <?php if(!isOpen(date('l'))):
+        $nextOpenDate = getNextOpenDate();
+        $nextOpenDay = $nextOpenDate->format("l");
+    ?>
 
-                    // Google\Service\Calendar\EventDateTime type.
-                    $start = $event->start;
-                    $startDate = $start->date;
-                    $startTime = $start->dateTime;
-                    // $startTimezone = $start->timezone;
+    <h3>We're closed today, but join us <?php print $nextOpenDay; ?> from <?php print getHours($nextOpenDay); ?>.</h3>
 
-                    // Google\Service\Calendar\EventDateTime
-                    $end = $event->end;
-                    $endDate = $end->date;
-                    $endTime = $end->dateTime;
-                    // $endTimezone = $end->timezone;
-
-
-
-                    // Link to the Google Calendar application for this event.
-                    $event->htmlLink;
-                    $start = empty($start) ? $event->start->date : $event->start->dateTime;
-                    $start = new DateTime($start);
-                ?>
-                    <h2 class="event-name"><?= $event->summary ?></h2>
-                    <h3><?php print $start->format('l, F j, ga'); ?></h3>
-                <?php endforeach; ?>
-                    <p>
-                        <a href="/events">Details</a> | <a href="/location">Location</a>
-                    </p>
-                </div>
-            <?php endif; ?>
-
-
-
-
-    
-    <section>
-
-        <h2>Inside & Patio Dining</h2>
-        <p>BL DINING SHOT (INSIDE) FS</p>
-        <p>COPY EXAMPLE: Enjoy Belgian comfort food and fine draught beers and cocktails in our comfortable dining area, or Bière Library bar.  Or enjoy the patio, beautiful Oregon days adjacent to Corvallis' Riverfront Commemorative Park.</p>
-        <h2>The Patio</h2>
-        <p>BL DINING SHOT (PATIO) FS</p>
-        <p>BL Patio copy: waterfront and commemorative park.  Drink descriptions.</p>
-        <button><a class="bl-button" href="/food">Food</a></button>
-        <button><a class="bl-button" href="/drink">Drinks</a></button>
-    </section>
-
-
-
-    <section>
-
-        <h2>From the Bar</h2>
-        <p>BL BAR SHOT FS</p>
-        <p>BL BAR copy: Drafts and popular drink descriptions. Happy hour callout.  Popular food choices.</p>
-        <h2>Draughts</h2>
-        <p>BL BAR copy: Drafts and popular drink descriptions. Happy hour callout.  Popular food choices.</p>
-        <button><a class="bl-button" href="/drink">Drinks</a></button>
-    </section>
-
-
-
-
-
-    <section>
-
-        <h2>From the bottle shop</h2>
-        <p>BL BOTTLES-CANS SHOT FS</p>
-
-        <button><a class="bl-button" href="/drink">Bottles & Cans</a></button>
-    </section>
-
-
-
-    <section>
-
-        <h2>Belgian Street Food Inspired</h2>
-
-        <img class="circle" src="<?= $themeUrl ?>/assets/images/frites.jpg" />
-        <div class="grid">
-            <p class="content">
-                Inspired by Belgian street food and Erica's family recipes, Chef Travis has created a menu based on simple flavors that pair well with beer. Sweet and savory crêpes are a staple, as well as house-made soups and stews, cheese &amp; charcuterie boards, sandwiches, meat &amp; potatoes, and rotating specials. And of course, Belgian frites!
-            </p>
-            <p class="actions">
-                <button>Food Menu</button>
-            </p>
+    <?php else: ?>
+        <p>Open today, <?php print getTodaysHours(); ?></p>
+        <!-- <h2>The Bière Library Happy Hour... Everyday!</h2> -->
+        <div class="event event-short">
+            <h2>Today, Happy Hour!</h2>
+            <p>Daily, 2pm&mdash;5pm, $1 off drafts, frites, brussel sprouts &amp; paprika chips.</p>
         </div>
+    <?php endif; ?>
 
+    <?php 
+
+        
+        print getUpcomingEvents(getSitePrimaryCalendarId(), null, "todays-event");
+    ?>
+
+    <p>
+        <a href="/events">Details</a> | <a href="/location">Location</a>
+    </p>
+        
+</div>
+
+
+
+
+
+<section>
+
+    <h1>Indoor &amp; Patio Dining</h1>
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/indoor-dining.jpg" />
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/indoor-dining-1.jpg" />
+    <!-- BL DINING SHOT (INSIDE) FS -->
+    <p>The Bière Library is a craft beer bar and restaurant serving Corvallis, Oregon. Inspired by the beer and cuisine of Belgium, The Bière Library explores the relationship between beer and food in an environment reminiscent of a comfortable library.</p>
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/plated-1.jpg" />
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/plated-2.jpg" />
+    <br />
+    <button><a class="bl-button" href="/food">Food Menu</a></button>
+    <button><a class="bl-button" href="/drink">Drink Menus</a></button>
+</section>
+
+
+<section>
+    <h1>The Patio</h1>
+    <div id="patio">&nbsp;</div>
+
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/patio-2.jpg" />
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/patio-night-shot.jpg" />
+    <!-- BL DINING SHOT (PATIO) FS -->
+    <p>The Bière Library restaurant and patio are situated adjacent to Corvallis' picturesque Commemorative Waterfront Park and the Willamette River.  Enjoy the view from inside or outside.  Dogs welcome outside!</p>
+    <button><a class="bl-button" href="/food">Food Menu</a></button>
+    <button><a class="bl-button" href="/drink">Drink Menus</a></button>
+</section>
+
+
+
+<section>
+
+    <h1>From the Bar</h1>
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/bar-1.jpg" />
+    <!-- BL BAR SHOT FS -->
+    <p>BL BAR copy: Drafts and popular drink descriptions. Happy hour callout.  Popular food choices.</p>
     </section>
+
+    <section>
+    <h1>On Draft</h1>
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/drafts-1.jpg" />
+    <p>A small, well-curated selection of local craft and import beer rotate frequently on draft and in bottles, with an emphasis on quality and diversity of styles.  Tasters, flights and half-pours available.</p>
+    <br />
+    <!-- BL BAR copy: Drafts and popular drink descriptions. Happy hour callout.  Popular food choices. -->
+    <button><a class="bl-button" href="/drink">Drink Menus</a></button>
+</section>
+
+
+
+
+
+<section>
+
+    <h1>From the bottle shop</h1>
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/bottle-shop.jpg" />
+    <!-- BL BOTTLES-CANS SHOT FS -->
+    <p>The Bière Library carries a variety of bottles and cans in an assortment of styles. Explore classic Belgian beers next to new world interpretations, indulge in the best of the Northwest's IPAs, or kick back with a bright, refreshing lager</p>
+    <br />
+    <button><a class="bl-button" href="/drink">Bottles &amp; Cans Menu</a></button>
+</section>
+
+
+
+<section>
+
+    <h1>Belgian Street Food Inspired</h1>
+
+    <img class="circle" src="<?= $themeUrl ?>/assets/images/frites.jpg" />
+    <div class="grid">
+        <p class="content">
+            The Bière Library menu features Belgian comfort food, described by Chef Travis as a cross between traditional German food portions and the refinement of French cooking techniques. Sweet and savory crêpes are a staple, as well as house-made soups and stews, cheese &amp; charcuterie boards, sandwiches, meat &amp; potatoes, and rotating specials. And of course, Belgian frites!
+        </p>
+        
+            <button><a class="bl-button" href="/food">Food Menu</a></button>
+        
+    </div>
+
+</section>
 
 
 

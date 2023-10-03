@@ -25,18 +25,18 @@
 
     <div class="row three-columns">
         <div class="column footer-panel">
-            <h3>Erica Baze</h3>
+            <h3><a class="dotted" href="/about#erica-baze">Erica Baze</a></h3>
             Owner/General Manager<br />
-            <h3>Travis Allen</h3>
+            <h3><a class="dotted" href="/about#travis-allen">Travis Allen</a></h3>
             Owner/Chef
         </div>
 
         <div class="column footer-panel">
             <h3>Hours</h3>
-            Sunday, 12pm&mdash;8pm<br />
-            Monday, 12pm&mdash;10pm<br />
-            Tuesday, Closed<br />
-            Wednesday-Saturday, 12pm&mdash;10pm
+            Sunday, <?php print getHours("Sunday"); ?><br />
+            Monday, <?php print getHours("Monday"); ?><br />
+            Tuesday, <?php print getHours("Tuesday"); ?><br />
+            Wednesday-Saturday, <?php print getHours("Wednesday"); ?>
         </div>
 
 

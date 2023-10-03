@@ -1,3 +1,4 @@
+/*
 #wrapper {
     background-image: url(themes/biere-library/assets/images/draft-list.jpg);
     min-height: 800px;
@@ -8,7 +9,7 @@
     background-attachment: fixed;
     background-position: left top;
 }
-
+*/
 
 .table-format li {
     display: table-cell;

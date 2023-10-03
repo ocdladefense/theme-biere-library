@@ -1,90 +1,43 @@
-<?php
-use Http\Http;
-use Http\HttpRequest;
-use Http\HttpResponse;
 
 
-// var_dump($results->getItems());
-$biereLibraryCalendarId = "c_07c922398faccc5695d450d685cccf3a2463815c4ea56ad99d709e741e9e1363";
-$josesLibraryCalendarId = "54b9c815f343ae63a171ff6afe361206457cf4c59e97a22b53165c981f98f0ab";
 
-$events = getEvents($josesLibraryCalendarId);
+<div style="border: 1px solid #fff; padding: 25px;">
+    <h2 class="cheers" style="border: 1px solid transparent !important;">The Bière Library Happy Hour... Everyday!</h2>
+    <h3>Daily, 2&mdash;5pm</h3>
+    <p>$1 off drafts, frites, brussel sprouts, paprika chips.</p>
+
+    <p>
+        <a target="_new" href="https://www.facebook.com/thebierelibrary" style="cursor: pointer; margin-right: 20px;">
+            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+        </a>
+    
+        <a target="_new" href="https://www.instagram.com/thebierelibrary/" style="cursor: pointer;">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+        </a>
+    </p>
+</div>
+
+<h3>See our calendar of events, below!</h3>
+
+<h1>Events</h1>
+
+
+<?php 
+
+    $today = explode("T",date('c'))[0];
+    $todayDay = date('l');
+    $timeMax = (new DateTime($today))->modify('+15 day');
+    $end = explode("T",date_format($timeMax,'c'))[0];
+
+    $params = array(
+        "timeMin" => $today,
+        "timeMax" => $end,
+        "maxResults" => 30 // Need to accommodate multiple happy hour entries.
+    );
+    print getUpcomingEvents(getSitePrimaryCalendarId(), $params);
 ?>
 
 
-
-
-<div class="cheers">
-    <h2>The Bière Library Happy Hour... Everyday!</h2>
-    <h3>Daily, 2&mdash;5pm</h3>
-    <p>$1 off drafts, frites, brussel sprouts, paprika chips.</p>
-</div>
-
-
-<?php if(null == $events || count($events) == 0): ?>
-
-    <h3>See our calendar of events, below!</h3>
-    
-<?php else: ?>
-
-    <h1>Events</h1>
-    <h3>at The Bière Library</h3>
-
-    <?php foreach($events as $event):
-
-
-        /*
-        // The unique event id for this event.
-        $event->id;
-
-        // public 'kind' => string 'calendar#event
-        $event->kind;
-
-        // The location for the event.
-        $event->location;
-
-        // Not sure what this is.
-        $event->recurringEventId;
-
-        // Name of the event.
-        $event->summary;
-        */
-        if("Happy Hour!" == $event->summary) continue;
-
-        // Extended description of the event.  Can include HTML.
-        $event->description;
-
-        // Google\Service\Calendar\EventDateTime type.
-        $start = $event->start;
-        $startDate = $start->date;
-        $startTime = $start->dateTime;
-        // $startTimezone = $start->timezone;
-
-        // Google\Service\Calendar\EventDateTime
-        $end = $event->end;
-        $endDate = $end->date;
-        $endTime = $end->dateTime;
-        // $endTimezone = $end->timezone;
-
-
-
-        // Link to the Google Calendar application for this event.
-        $event->htmlLink;
-        $start = empty($start) ? $event->start->date : $event->start->dateTime;
-        $start = new DateTime($start);
-        ?>
-    
-        
-        <div class="event event-today">
-            <h2 class="event-name"><?= $event->summary ?></h2>
-            <h3><?php print $start->format('l, F j, ga'); ?></h3>
-            <p><?= $event->description ?></p>
-        </div>
-
-
-    <?php endforeach; ?>
-
-<?php endif; ?>
 <h2>Bière Library Events</h2>
 
 

@@ -1,0 +1,95 @@
+
+
+
+[home] #patio {
+    display:block;
+    height: 600px;
+    background-image: url(../assets/images/patio-fs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -1px -278px;
+    /* display: none; */
+    width: 100vw;
+    position: relative;
+    box-sizing: content-box;
+    margin-left: -231px;
+}
+
+
+    .three-columns {
+    display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-gap: 3%;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .column {
+        display: unset;
+    }
+
+
+    #wrapper {
+        width: 70%;
+        padding: 0px 5%;
+    }
+
+    section {
+        margin-top: 20.0rem;
+    }
+
+
+
+    p {
+        font-size: 2.3rem;
+        line-height: 4.0rem;
+    }
+
+    h2 {
+        font-size: 4.0rem;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    button {
+        width: unset;
+    }
+
+    header {
+
+        background-position-x: unset;
+    }
+
+    .header-content {
+        padding-left: 35px;
+    }
+
+    button {
+        background-color: rgba(46, 7, 3, 0.3);
+        backdrop-filter: blur(1px);
+    }
+
+    .header-content {
+
+        margin-top: unset;
+    }
+
+    .bl-title::after {
+        content: unset;
+        white-space: unset;
+    }
+
+    .cheers {
+        border: 1px solid #fff;
+        padding: 10px;
+        background-image: url("/themes/biere-library/assets/images/hand-on-mug.png");
+        background-repeat: no-repeat;
+        background-position-x: 10px;
+        background-position-y: center;
+        background-size: contain;
+        padding-left: 24%;
+        border-radius: 5px;
+    }
+

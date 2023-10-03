@@ -1,6 +1,17 @@
 
 
 
+<section class="first">
+
+    <h2>Visit Us!</h2>
+
+    <p>The Bière Library is located on Corvallis' <a class="dotted" href="https://www.corvallisoregon.gov/parksrec/page/riverfront-commemorative-park" target="_new">Riverfront Commemorative Park</a> at the corner of Water Avenue (1st Ave.) and Monroe streets. We look forward to seeing you... Santé!</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2842.61077946712!2d-123.26145072381829!3d44.564070271073625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c04178e54ba92b%3A0x1a0d2654767e506d!2sThe%20Biere%20Library!5e0!3m2!1sen!2sus!4v1696266292424!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+
+
     <section>
 
         <h2>The Bière Library Story</h2>
@@ -8,12 +19,25 @@
             <p class="content">
                 The Bière Library is a craft beer bar and restaurant serving Corvallis, Oregon. Inspired by the beer and cuisine of Belgium, The Bière Library explores the relationship between beer and food in an environment reminiscent of a comfortable library. A small, well-curated selection of local craft and import beer rotate frequently on draft and in bottles, with an emphasis on quality and diversity of styles. The food menu features Belgian comfort food, described by Chef Travis as a cross between traditional German food portions and the refinement of French cooking techniques.
             </p>
+
+            <p>
+                <a target="_new" href="https://www.facebook.com/thebierelibrary" style="cursor: pointer; margin-right: 20px;">
+                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                </a>
+            
+                <a target="_new" href="https://www.instagram.com/thebierelibrary/" style="cursor: pointer;">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+            </p>
     </section>
+
+
+
 
 
     <section>
 
-        <h2>Erica Baze</h2>
+        <h2 id="erica-baze">Erica Baze</h2>
         <h3>Owner/General Manager</h3>
         <img class="circle" src="<?= $themeUrl ?>/assets/images/erica.jpg" />
         <div class="grid">
@@ -31,7 +55,7 @@
 
     <section>
 
-        <h2>Travis Allen</h2>
+        <h2 id="travis-allen">Travis Allen</h2>
         <h3>Owner/Chef</h3>
         <img class="circle" src="<?= $themeUrl ?>/assets/images/travis.jpg" />
         <div class="grid">  
