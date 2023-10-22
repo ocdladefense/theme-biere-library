@@ -1,8 +1,10 @@
-
+.desktop {
+    display: none;
+}
 
 
 [home] #patio {
-    display:block;
+    display: block;
     height: 600px;
     background-image: url(../assets/images/patio-fs.jpg);
     background-repeat: no-repeat;
@@ -16,80 +18,100 @@
 }
 
 
-    .three-columns {
+
+[home] section.first {
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 6.0rem;
+}
+
+
+.three-columns {
     display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-gap: 3%;
-        justify-content: end;
-        align-items: center;
-    }
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+    justify-content: end;
+    align-items: center;
+}
 
-    .column {
-        display: unset;
-    }
-
-
-    #wrapper {
-        width: 70%;
-        padding: 0px 5%;
-    }
-
-    section {
-        margin-top: 20.0rem;
-    }
+.column {
+    display: unset;
+}
 
 
+#wrapper {
+    width: 70%;
+    padding: 0px 5%;
+}
 
-    p {
-        font-size: 2.3rem;
-        line-height: 4.0rem;
-    }
+section {
+    margin-top: 20.0rem;
+}
 
-    h2 {
-        font-size: 4.0rem;
-    }
 
-    .grid {
-        display: block;
-    }
 
-    button {
-        width: unset;
-    }
+p {
+    font-size: 2.3rem;
+    line-height: 4.0rem;
+}
 
-    header {
 
-        background-position-x: unset;
-    }
 
-    .header-content {
-        padding-left: 35px;
-    }
 
-    button {
-        background-color: rgba(46, 7, 3, 0.3);
-        backdrop-filter: blur(1px);
-    }
+h2 {
+    font-size: 4.0rem;
+}
 
-    .header-content {
+.grid {
+    display: block;
+}
 
-        margin-top: unset;
-    }
 
-    .bl-title::after {
-        content: unset;
-        white-space: unset;
-    }
 
-    .cheers {
-        border: 1px solid #fff;
-        padding: 10px;
-        background-image: url("/themes/biere-library/assets/images/hand-on-mug.png");
-        background-repeat: no-repeat;
-        background-position-x: 10px;
-        background-position-y: center;
-        background-size: contain;
-        padding-left: 24%;
-        border-radius: 5px;
-    }
+header {
+    background-size: cover;
+    background-position-x: unset;
+}
+
+.header-content, .home-nav {
+    padding-left: 35px;
+}
+
+.darken-background {
+    background-color: unset;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+a.bl-button {
+    width: unset;
+    background-color: rgba(46, 7, 3, 0.3);
+    backdrop-filter: blur(1px);
+    margin-right: 20px;
+}
+
+.header-content {
+
+    margin-top: unset;
+}
+
+.bl-title::after {
+    content: unset;
+    white-space: unset;
+}
+
+.cheers {
+    border: 1px solid #fff;
+    padding: 10px;
+    background-image: url("/themes/biere-library/assets/images/hand-on-mug.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: contain;
+    padding-left: 24%;
+    border-radius: 5px;
+}
 

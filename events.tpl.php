@@ -17,7 +17,7 @@
     </p>
 </div>
 
-<h3>See our calendar of events, below!</h3>
+<h3>View our <a class="dotted" href="#embedded-calendar">complete calendar of events</a>, below!</h3>
 
 <h1>Events</h1>
 
@@ -38,7 +38,7 @@
 ?>
 
 
-<h2>Bière Library Events</h2>
+<h2 id="embedded-calendar">Bière Library Events</h2>
 
 
 

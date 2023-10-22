@@ -4,6 +4,21 @@
     display:none;
 }
 
+
+
+.all-ages-callout {
+    font-size: 2em;
+    position: absolute;
+    top: 80vh;
+    left: auto;
+    font-style: italic;
+}
+
+.desktop {
+    display: none;
+}
+
+
 :root {
     --desktop-shading: rgba(60, 64, 67, .2);
     --text-lighter: rgba(0, 0, 0, 0.55);
@@ -53,7 +68,7 @@ body {
 }
 
 
-a {
+a:not(.bl-button) {
     text-decoration: none;
     color: rgba(255,255,255,1.0);
 }
@@ -88,24 +103,35 @@ theme: {
 */
 
 
+
+.darken-background {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
+}
+
 body[home] #wrapper {
     /* margin-top: 110vh; */
     padding: 0px 8px;
 }
 
+
+
+
 header {
     padding: 1%;
-    background-image: url(../assets/images/banner.jpg);
+    background-image: url(../assets/images/banner.jpg?cachebust=001);
     width: 100%;
     min-height: 100vh;
-    background-size: cover;
+
     display: block;
     position: relative;
     top: 0px;
     left: 0px;
     background-repeat: no-repeat;
     overflow: hidden;
-    background-position-x: 70%;
+    background-position-x: 74%;
 }
 
 
@@ -131,7 +157,7 @@ body:not([home]) header {
 header h1 {
     margin-bottom: 0px;
     margin-top: 0px;
-
+    font-size:6.0rem;
 }
 
 header h2 {
@@ -176,8 +202,9 @@ body {
 
 
 .header-logo {
-    padding: 20px;
+    padding: 10px;
     display: inline-block;
+    padding-bottom: 25px;
 }
 
 h3 {
@@ -211,13 +238,13 @@ footer a:hover {
 
 
 
-button {
+a.bl-button {
     background-color: transparent;
     font-family: var(--heading-font-family);
-    font-weight: bold;
+    /* font-weight: bold; */
     padding: 10px 22px;
     border-radius: 4px;
-    border-width: 2.5px;
+    border-width: 1px;
     border-style: solid;
     border-color: var(--button-border-color);
     color: rgba(255, 255, 255, 1.0);
@@ -226,24 +253,23 @@ button {
     letter-spacing: 0.5px;
     cursor: pointer;
     margin-right: 20px;
-    /* -webkit-text-fill-color: transparent; */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
     display: inline-block;
     width: 100%;
     margin-top:10px;
     background-color: var(--building-color-darker-transparent);
     backdrop-filter: blur(1px);
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+a.bl-button:hover {
+    color: var(--building-color-darker);
+    background-color: #fff;
 }
 
 
 
 
-p {
+p, .event {
     font-size: 2.3rem;
     line-height: 4.0rem;
 }
@@ -297,7 +323,7 @@ blockquote.statute {
 
 
 h1 {
-    font-size:6.0rem;
+    font-size:5.0rem;
 }
    
 
@@ -424,12 +450,12 @@ h1 {
 
 
 .actions button {
-            background-image: url("/themes/biere-library/assets/images/hand-on-mug.png");
-                background-repeat: no-repeat;
-                background-position-x: 10px;
-                background-position-y: center;
-                background-size: 20%;
-                padding-left: 24%;
+    background-image: url("/themes/biere-library/assets/images/hand-on-mug.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-size: 20%;
+    padding-left: 24%;
 }
 
 
@@ -449,7 +475,7 @@ footer a:visited {
 
 
 
-p {
+p, li {
     margin-top: 15px;
     margin-bottom: 4px;
     font-size: 2.3rem;
@@ -458,6 +484,7 @@ p {
     font-weight: 300;
     font-family: var(--brand-font);
     -webkit-font-smoothing: antialiased;
+
 }
 
 
@@ -471,9 +498,6 @@ p {
     padding-right: 30px;
  }
 
- [home] section.first {
-    margin-left: 30px;
- }
 
 
 
@@ -502,4 +526,6 @@ p {
  }
  
 
- 
+ img.resize-smaller {
+    width: 255px;
+ }
