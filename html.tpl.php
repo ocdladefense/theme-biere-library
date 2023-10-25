@@ -13,8 +13,11 @@
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
             
-            gtag('config', '<?php print getGaProperyId(); ?>');
-            // gtag('config', '<?php print getGaProperyId(); ?>',{'debug_mode':true});
+            <?php if(isGaDebug()): ?>
+                gtag('config', '<?php print getGaProperyId(); ?>',{'debug_mode':true});
+            <?php else: ?>
+                gtag('config', '<?php print getGaProperyId(); ?>');
+            <?php endif; ?>
         </script>
         <title><?= $title ?></title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
