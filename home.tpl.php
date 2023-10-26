@@ -1,16 +1,8 @@
 
 
 <section class="first">
-    <h1>The Bière Library Three Year Anniversary Celebration</h1>
-    <h2>October 20 &mdash; 23, &nbsp;2023</h2>
-    <img src="<?= $themeUrl ?>/assets/images/the-biere-library-anniversary-icon.svg" width="50%" />
     
-    <p>Join us this weekend for The Bière Library's Three Year Anniversary! Food and drink specials, raffles and good company.</p>
-        <p>The Bière Library is a craft beer bar and restaurant serving Corvallis, Oregon. Inspired by the beer and cuisine of Belgium, The Bière Library explores the relationship between beer and food in an environment reminiscent of a comfortable library.</p>
-    <p>
-        <a class="dotted" href="/events--three-year-anniversary">More info</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;<a class="dotted" href="/events">Upcoming events</a>
-    </p>
+    <p>The Bière Library is a craft beer bar and restaurant serving Corvallis, Oregon. Inspired by the beer and cuisine of Belgium, The Bière Library explores the relationship between beer and food in an environment reminiscent of a comfortable library.</p>
     
     <a class="bl-button" href="/food">Food Menu</a>
     <a class="bl-button" href="/drink">Drink Menus</a>
