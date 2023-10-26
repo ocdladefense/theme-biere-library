@@ -30,17 +30,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="<?= $themeUrl ?>/css/main.css" />
-        <!-- <link rel="stylesheet" href="<?= $themeUrl ?>/css/food.css" /> -->
-        <!-- <link rel="stylesheet" href="<?= $themeUrl ?>/css/drink.css" /> -->
-        <link rel="stylesheet" href="<?= $themeUrl ?>/css/menu.css" />
-        <link rel="stylesheet" media="(min-width:767px)" href="<?= $themeUrl ?>/css/desktop.css" />
+        <link rel="stylesheet" href="/<?= $themeUrl ?>/css/main.css" />
+        <!-- <link rel="stylesheet" href="/<?= $themeUrl ?>/css/food.css" /> -->
+        <!-- <link rel="stylesheet" href="/<?= $themeUrl ?>/css/drink.css" /> -->
+        <link rel="stylesheet" href="/<?= $themeUrl ?>/css/menu.css" />
+        <link rel="stylesheet" media="(min-width:767px)" href="/<?= $themeUrl ?>/css/desktop.css" />
 
         <script src="https://kit.fontawesome.com/c2278a45b9.js" crossorigin="anonymous">
         </script>
     </head>
 
-    <body <?= $route ?>>
+    <body <?= $body_class ?>>
         
             <?= $body ?>
 

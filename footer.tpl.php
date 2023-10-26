@@ -7,7 +7,7 @@
         <div class="row three-columns">
             <div class="column footer-panel">
                 <a href="/home">
-                    <img src="themes/biere-library/assets/images/logo-white.png" style="width:100px;" />
+                    <img src="/<?= $themeUrl ?>/assets/images/logo-white.png" style="width:100px;" />
                 </a>
             </div>
             <div class="column footer-panel">
