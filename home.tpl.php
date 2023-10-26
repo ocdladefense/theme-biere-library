@@ -52,7 +52,7 @@
     ?>
 
     <p>
-        <a href="/events">Details</a> | <a href="/location">Location</a>
+        <a href="/events">Details</a> | <a href="/about">Location</a>
     </p>
         
 </div>
