@@ -46,9 +46,7 @@
     <?php endif; ?>
 
     <?php 
-
-        
-        print getPinnedEvents(getSitePrimaryCalendarId(), null, "todays-event");
+        // print getPinnedEvents(getSitePrimaryCalendarId(), null, "todays-event");
     ?>
 
     <p>
