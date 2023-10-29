@@ -19,22 +19,16 @@
 
 <h3>View our <a class="dotted" href="#embedded-calendar">complete calendar of events</a>, below!</h3>
 
-<h1>Events</h1>
-
-
+<h1 id="featured-events" style="margin-top:60px;">Featured Events</h1>
+<p>See all <a class="dotted" href="#upcoming-events">upcoming events</a>.</p>
 <?php 
+    print renderEventComponent("FeaturedEvents");
+?>
 
-    $today = explode("T",date('c'))[0];
-    $todayDay = date('l');
-    $timeMax = (new DateTime($today))->modify('+15 day');
-    $end = explode("T",date_format($timeMax,'c'))[0];
-
-    $params = array(
-        "timeMin" => $today,
-        "timeMax" => $end,
-        "maxResults" => 30 // Need to accommodate multiple happy hour entries.
-    );
-    print getUpcomingEvents(getSitePrimaryCalendarId(), $params);
+<h1 id="upcoming-events" style="margin-top:60px;">Upcoming Events</h1>
+<p>See our <a class="dotted" href="#featured-events">featured events</a>, too.</p>
+<?php 
+    print renderEventComponent("UpcomingEvents");
 ?>
 
 
