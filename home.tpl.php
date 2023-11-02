@@ -46,7 +46,8 @@
     <?php endif; ?>
 
     <?php 
-        // print getPinnedEvents(getSitePrimaryCalendarId(), null, "todays-event");
+        print renderEventComponent("FeaturedEvents");
+        print renderEventComponent("UpcomingEventsHomepage");
     ?>
 
     <p>
