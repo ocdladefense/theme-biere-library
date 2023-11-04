@@ -17,6 +17,10 @@
     margin-left: -231px;
 }
 
+img.calendar-attachment {
+    max-width: 50%;
+}
+
 
 
 [home] section.first {
