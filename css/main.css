@@ -4,6 +4,9 @@
     display:none;
 }
 
+img.calendar-attachment {
+    max-width: 100%;
+}
 
 
 .all-ages-callout {

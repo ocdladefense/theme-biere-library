@@ -1,6 +1,18 @@
+
+
+
+
 <?php 
-    print renderEventComponent("EventInfo", $event);
+    print renderEventComponent("EventInfo", array("name" => $event, "tpl" => "event-info"));
 ?>
+
+
+
+
+
+
+
+<a style="margin-bottom: 40px; margin-top:40px;" class="bl-button" href="/events">View all events</a>
 
 
 
@@ -20,19 +32,3 @@
         </a>
     </p>
 </div>
-
-<h3>View our <a class="dotted" href="#embedded-calendar">complete calendar of events</a>, below!</h3>
-
-<h1 id="featured-events" style="margin-top:60px;">Featured Events</h1>
-
-<p>See all <a class="dotted" href="#upcoming-events">upcoming events</a>.</p>
-<?php 
-    print renderEventComponent("FeaturedEvents");
-?>
-
-<h1 id="upcoming-events" style="margin-top:60px;">Upcoming Events</h1>
-
-<p>See our <a class="dotted" href="#featured-events">featured events</a>, too.</p>
-<?php 
-    print renderEventComponent("UpcomingEvents");
-?>
