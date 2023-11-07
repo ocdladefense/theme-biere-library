@@ -4,9 +4,10 @@
     <h3><?php print $start->format('l, F j, ga'); ?></h3>
     <p><?= $event->description ?></p>
 
-    <?php if($hasImage): ?>
+    <?php foreach($attachmentUrls as $src): ?>
         <img class="calendar-attachment" src="<?= $src ?>" />
-    <?php endif; ?>
+        <br />
+    <?php endforeach; ?>
     <!--
     <img src="<?= $event->attachments[0]->fileUrl ?>" />
     -->
