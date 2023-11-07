@@ -38,5 +38,3 @@
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23A79B8E&ctz=America%2FLos_Angeles&showTz=0&showCalendars=0&showTabs=1&showPrint=0&showTitle=1&mode=AGENDA&src=Y18wN2M5MjIzOThmYWNjYzU2OTVkNDUwZDY4NWNjY2YzYTI0NjM4MTVjNGVhNTZhZDk5ZDcwOWU3NDFlOWUxMzYzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F4511E" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-<!--
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23795548&ctz=America%2FLos_Angeles&showCalendars=0&showTabs=1&showNav=1&showTitle=1&mode=AGENDA&src=NTRiOWM4MTVmMzQzYWU2M2ExNzFmZjZhZmUzNjEyMDY0NTdjZjRjNTllOTdhMjJiNTMxNjVjOTgxZjk4ZjBhYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->

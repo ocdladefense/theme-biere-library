@@ -101,7 +101,8 @@
     <p>A well-curated selection of local craft and import beer rotate frequently on draft and in bottles, with an emphasis on quality and diversity of styles.  Tasters, flights and half-pours available.</p>
     <br />
     <!-- BL BAR copy: Drafts and popular drink descriptions. Happy hour callout.  Popular food choices. -->
-    <a class="bl-button" href="/drink">Drink Menus</a>
+    <a class="bl-button" href="/drink">Beer Menu</a>
+    <a class="bl-button" href="/drink">Wine &amp; Cocktail</a>
 </section>
 
 

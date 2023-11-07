@@ -3,7 +3,7 @@
 
 
 <?php 
-    print renderEventComponent("EventInfo", array("name" => $event, "tpl" => "event-info"));
+    print renderEventComponent("EventInfo", array("date" => $date, "name" => $event, "tpl" => "event-info"));
 ?>
 
 
