@@ -4,8 +4,15 @@
     <h3><?php print $start->format('l, F j, ga'); ?></h3>
     <p><?= $event->description ?></p>
 
-    <?php foreach($attachmentUrls as $src): ?>
-        <img class="calendar-attachment" src="<?= $src ?>" />
+    <?php foreach($attachments as $attachment): ?>
+        <?php if($attachment->isImage): ?>
+            <img class="calendar-attachment" src="<?= $attachment->embedUrl ?>" />
+        <?php else: ?>
+            <h2><?= $attachment->title ?></h2>
+            <iframe width="100%" height="800" src="<?= $attachment->embedUrl ?>"></iframe>
+
+        <?php endif; ?>
+
         <br />
     <?php endforeach; ?>
     <!--

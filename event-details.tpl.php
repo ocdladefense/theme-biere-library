@@ -8,10 +8,6 @@
 
 
 
-
-
-
-
 <a style="margin-bottom: 40px; margin-top:40px;" class="bl-button" href="/events">View all events</a>
 
 
