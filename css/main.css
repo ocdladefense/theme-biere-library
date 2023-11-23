@@ -532,3 +532,18 @@ p, li {
  img.resize-smaller {
     width: 255px;
  }
+
+
+
+.long-message.header-callout {
+    float: right;
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: rgba(46, 7, 3, 0.5);
+    border-radius: 10px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    width: 200px;
+    margin-top: 9px;
+    line-height: 28px;
+}
