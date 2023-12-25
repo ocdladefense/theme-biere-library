@@ -79,9 +79,11 @@ h2 {
 
 
 header {
+    background-image: url(../assets/images/banner.jpg?cachebust=001);
     background-size: cover;
     background-position-x: unset;
 }
+
 
 .header-content, .home-nav {
     padding-left: 35px;
