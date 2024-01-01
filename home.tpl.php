@@ -102,7 +102,7 @@
     <br />
     <!-- BL BAR copy: Drafts and popular drink descriptions. Happy hour callout.  Popular food choices. -->
     <a class="bl-button" href="/drink">Beer Menu</a>
-    <a class="bl-button" href="/drink">Wine &amp; Cocktail</a>
+    <a class="bl-button" href="/drink">Wine &amp; Cocktails</a>
 </section>
 
 
