@@ -29,12 +29,12 @@
 <div style="border:1px solid #fff; padding: 25px;">
     <h1 class="cheers" style="border: 0px solid transparent !important;">Bière Library Events</h1>
 
-    <?php if(!isOpen(date('l'))):
+    <?php if(!isOpenToday()):
         $nextOpenDate = getNextOpenDate();
         $nextOpenDay = $nextOpenDate->format("l");
     ?>
 
-    <h3>We're closed today, but join us <?php print $nextOpenDay; ?> from <?php print getHours($nextOpenDay); ?>.</h3>
+        <h3>We're closed today, but join us <?php print $nextOpenDay; ?> from <?php print getHours($nextOpenDay); ?>.</h3>
 
     <?php else: ?>
         <p>Open today, <?php print getTodaysHours(); ?></p>
