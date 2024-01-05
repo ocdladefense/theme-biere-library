@@ -4,17 +4,34 @@
     
     <p>The Bière Library is a craft beer bar and restaurant serving Corvallis, Oregon. Inspired by the beer and cuisine of Belgium, The Bière Library explores the relationship between beer and food in an environment reminiscent of a comfortable library.</p>
     
-    <a class="bl-button" href="/food">Food Menu</a>
-    <a class="bl-button" href="/drink">Drink Menus</a>
-    <br />
+
+</section>
+
+<section class="first" id="lunch-special">
+
+
+
+    <h1>The Bière Library Lunch Special</h1>
+    <p style="font-style:italic;font-weight:bold;">$13 &mdash; Served daily from 12pm &mdash; 4pm.</p>
+
+    <p>Half a Croque Monsieur sandwich, served with a choice of soup, paprika chips or greens dressed in lemon vinaigrette.</p>
+    
     <div style="margin-top:15px;">
-    <img class="circle" src="<?= $themeUrl ?>/assets/images/plated-1.jpg" />
-    <img class="circle" src="<?= $themeUrl ?>/assets/images/plated-2.jpg" />
+        <img class="circle" src="<?= $themeUrl ?>/assets/images/plated-1.jpg" />
+        <img class="circle" src="<?= $themeUrl ?>/assets/images/plated-2.jpg" />
     </div>
 
-    <p>Check out our <a class="dotted" href="/food#dietary-options">gluten-free and vegetarian food &amp; drink options</a>.</p>
+
+    
+
+    
+    <p>For lunch and dinner, check out our <a class="dotted" href="/food#dietary-options">gluten-free and vegetarian food &amp; drink options</a>.</p>
 
     <p>The Bière Library is an all-ages venue!  Alcohol 21+.</p>
+
+    <a class="bl-button" href="/food">Food Menu</a>
+    <a class="bl-button" href="/drink">Drink Menus</a>
+
     <p>
         <a target="_new" href="https://www.facebook.com/thebierelibrary" style="cursor: pointer; margin-right: 20px;">
             <i class="fa-brands fa-facebook-f fa-2xl"></i>
