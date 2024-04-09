@@ -25,7 +25,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <link rel="icon" href="<?= $themeUrl ?>/assets/images/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="https://library.ocdla.org/<?= $themeUrl ?>/images/favicon.ico?foo=bar" type="image/x-icon" />
+        <link rel="shortcut icon" href="https://thebierelibrary.com<?= $themeUrl ?>/images/favicon.ico" type="image/x-icon" />
         <!-- <base href="/" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
