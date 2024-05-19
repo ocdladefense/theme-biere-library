@@ -29,6 +29,8 @@
             Owner/General Manager<br />
             <h3><a class="dotted" href="/about#travis-allen">Travis Allen</a></h3>
             Owner/Chef
+            <br />
+            <h3><a class="dotted" href="/careers">Careers</a></h3>
         </div>
 
         <div class="column footer-panel">
