@@ -54,7 +54,7 @@
         <h3>We're closed today, but join us <?php print $nextOpenDay; ?> from <?php print getHours($nextOpenDay); ?>.</h3>
 
     <?php else: ?>
-        <p>Open today, <?php print getTodaysHours(); ?></p>
+        <p>Open today: <?php print getTodaysHours(); ?></p>
         <!-- <h2>The Bière Library Happy Hour... Everyday!</h2> -->
         <div class="event event-short">
             <h2>Today, Happy Hour!</h2>
