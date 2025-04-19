@@ -43,8 +43,9 @@
     </p>
 </section>
 
-<div style="border:1px solid #fff; padding: 25px;">
-    <h1 class="cheers" style="border: 0px solid transparent !important;">Bière Library Events</h1>
+<section class="home-events" style="padding:0 0;">
+    <div style="padding: 7rem 18rem;">
+    <h1 class="cheers roboto-slab-200" style="border: 0px solid transparent !important;">Bière Library Events</h1>
 
     <?php if(!isOpenToday()):
         $nextOpenDate = getNextOpenDate();
@@ -70,8 +71,8 @@
     <p>
         <a href="/events">Details</a> | <a href="/about">Location</a>
     </p>
-        
-</div>
+        </div>
+</section>
 
 
 

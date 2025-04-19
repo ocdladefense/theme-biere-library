@@ -28,9 +28,12 @@
         <link rel="icon" href="<?= $themeUrl ?>/assets/images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="https://thebierelibrary.com<?= $themeUrl ?>/images/favicon.ico" type="image/x-icon" />
         <!-- <base href="/" /> -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500&family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="<?= $themeUrl ?>/css/colors.css" />
         <link rel="stylesheet" href="<?= $themeUrl ?>/css/main.css?cache=001" />
         <!-- <link rel="stylesheet" href="<?= $themeUrl ?>/css/food.css" /> -->
         <!-- <link rel="stylesheet" href="<?= $themeUrl ?>/css/drink.css" /> -->
@@ -41,7 +44,7 @@
         </script>
     </head>
 
-    <body <?= $body_class ?>>
+    <body style="background-color: #a46a00;color: #e9d9bc;" <?= $body_class ?>>
         
             <?= $body ?>
 

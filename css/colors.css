@@ -1,0 +1,72 @@
+/* Color Theme Swatches in Hex */
+.tbl-tan { color: #D98E04; }
+.tbl-orange { color: #BF5B04; }
+.tbl-blood-orange { color: #A63F03; }
+.tbl-maroon { color: #732002; }
+.tbl-dark-maroon { color: #260303; }
+
+
+.roboto-slab-200 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* #501010de */
+
+.home-events {
+    /* border: 1px solid #fff; */
+    position:relative;
+    /* background-color: #762222; */
+    color: rgb(248 224 170);
+    font-family: 'Roboto Slab';
+    z-index:0;
+}
+
+.home-events::before {
+    content: " ";
+    --units: 1.5vmax;
+    z-index: -1;
+    --brick1: #712020;
+    --brick2: #781c1c;
+    --lines: #565656;
+    --gp-ln: 50%/calc(var(--units) * 10) calc(var(--units) * 5);
+    --gp-cn: 50%/calc(var(--units) * 5) calc(var(--units) * 5);
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    position:absolute; 
+    /* height: 100vh; */
+    background:
+        repeating-conic-gradient(from 90deg at 95% 55%, var(--lines) 0% 25%, #fff0 0% 100%) var(--gp-cn),
+        repeating-linear-gradient(180deg, var(--lines) 0 5%, #fff0 0 50%, var(--lines) 0 55%, var(--brick2) 0 100%) var(--gp-ln),
+        repeating-linear-gradient(90deg, var(--brick1) 0 47.5%, var(--lines) 0 50%, var(--brick1) 0 97.5%, var(--lines) 0 100%) var(--gp-ln);
+}
+
+section {
+    padding: 0 3.0rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 10rem 22.0rem;
+    }
+}
+
+
+
+/* Color Theme Swatches in RGBA */
+.The-Biere-Library-1-rgba { color: rgba(217, 142, 4, 1); }
+.The-Biere-Library-2-rgba { color: rgba(191, 91, 4, 1); }
+.The-Biere-Library-3-rgba { color: rgba(166, 63, 3, 1); }
+.The-Biere-Library-4-rgba { color: rgba(115, 32, 2, 1); }
+.The-Biere-Library-5-rgba { color: rgba(38, 3, 3, 1); }
+
+/* Color Theme Swatches in HSLA */
+.The-Biere-Library-1-hsla { color: hsla(38, 96, 43, 1); }
+.The-Biere-Library-2-hsla { color: hsla(27, 95, 38, 1); }
+.The-Biere-Library-3-hsla { color: hsla(22, 96, 33, 1); }
+.The-Biere-Library-4-hsla { color: hsla(15, 96, 22, 1); }
+.The-Biere-Library-5-hsla { color: hsla(0, 85, 8, 1); }

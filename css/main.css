@@ -116,7 +116,7 @@ theme: {
 
 body[home] #wrapper {
     /* margin-top: 110vh; */
-    padding: 0px 8px;
+    /* padding: 0px 8px; */
 }
 
 
@@ -235,7 +235,7 @@ footer a:hover {
      position: relative;
      margin: 0 auto;
      margin-top: 25px;
-     width: 90%;
+     /* width: 90%; */
  }
 
 
@@ -326,6 +326,8 @@ blockquote.statute {
 
 h1 {
     font-size:5.0rem;
+    font-family: 'Roboto Slab';
+    line-height: 5.0rem;
 }
    
 
@@ -497,7 +499,6 @@ p, li {
  section.first {
     margin-top: 80px;
     margin-bottom: 80px;
-    padding-right: 30px;
  }
 
 
